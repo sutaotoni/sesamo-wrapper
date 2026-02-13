@@ -1,24 +1,23 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt">
-<head>
-  <meta charset="UTF-8" />
-  <title>Sésamo Acceso</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="manifest" href="/manifest.json" />
-  <meta name="theme-color" content="#0f172a" />
-  <style>
-    body {
-      margin: 0;
-      background-color: #0f172a;
-    }
-    iframe {
-      border: none;
-      width: 100vw;
-      height: 100vh;
-    }
-  </style>
-</head>
-<body>
-  <iframe src="https://ehfnkk1ymhl6bmwvlo7hmbywkuplv08t.ui.nabu.casa"></iframe>
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sésamo Acceso</title>
+
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="theme-color" content="#0f172a" />
+
+    <!-- fallback caso JS falhe -->
+    <meta http-equiv="refresh" content="0; url=https://ehfnkk1ymhl6bmwvlo7hmbywkuplv08t.ui.nabu.casa" />
+  </head>
+
+  <body style="margin:0; background:#0f172a; height:100vh; display:flex; align-items:center; justify-content:center; color:#fff; font-family:system-ui;">
+    <div>Carregando…</div>
+
+    <script>
+      // redirect “limpo” (não deixa voltar pra página intermediária)
+      window.location.replace("https://ehfnkk1ymhl6bmwvlo7hmbywkuplv08t.ui.nabu.casa");
+    </script>
+  </body>
 </html>
