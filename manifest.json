@@ -1,6 +1,6 @@
 {
-  "name": "Sésamo Acceso",
-  "short_name": "Sésamo",
+  "name": "Sésamo Ábrete",
+  "short_name": "Sésamo Ábrete",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0f172a",
