@@ -1,3 +1,7 @@
 {
-  "cleanUrls": true
+  "cleanUrls": true,
+  "rewrites": [
+    { "source": "/berriozar", "destination": "/berriozar/index.html" },
+    { "source": "/berriozar/go", "destination": "/berriozar/go.html" }
+  ]
 }
