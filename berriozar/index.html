@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Sésamo - Berriozar 14</title>
+
+    <meta name="theme-color" content="#0f172a" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="Sésamo Berriozar" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  </head>
+
+  <body style="margin:0; background:#0f172a; min-height:100vh; display:flex; align-items:center; justify-content:center; color:#fff; font-family:system-ui;">
+    <div style="text-align:center; max-width:320px; padding:24px;">
+      <div style="font-size:18px; font-weight:600; margin-bottom:10px;">Sésamo · Berriozar 14</div>
+      <div style="opacity:.85; margin-bottom:16px; font-size:14px;">
+        Para instalar como app: Compartir → Añadir a pantalla de inicio
+      </div>
+
+      <a href="/berriozar/go"
+         style="display:inline-block; background:#12b5a5; color:#06131a; text-decoration:none; padding:14px 18px; border-radius:12px; font-weight:700;">
+        Abrir ahora
+      </a>
+    </div>
+
+    <script>
+      const isStandalone =
+        window.navigator.standalone === true ||
+        (window.matchMedia && window.matchMedia("(display-mode: standalone)").matches);
+
+      if (isStandalone) {
+        window.location.replace("/berriozar/go");
+      }
+    </script>
+  </body>
+</html>
